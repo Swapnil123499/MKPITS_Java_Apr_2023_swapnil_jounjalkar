@@ -1,0 +1,32 @@
+.firstclass{
+	background-color: blue;
+}
+.secondclass{
+	background-color: darkgray;
+	margin-left: 10px;
+}
+.thirdclass{
+	background-color: hotpink;
+}
+.fourthclass{ height: 200px;
+	width: 200px;
+    background-color: blue;
+ margin: 5px;
+}
+.fifthclass{
+	 height: 200px;
+	width: 200px;
+  background-color: gray;
+  margin: 5px;
+}{
+
+}
+.sixclass{
+	 height: 200px;
+	width: 200px;
+   background-color: lightpink;
+   margin: 5px;
+}
+p{
+	color: white;
+}

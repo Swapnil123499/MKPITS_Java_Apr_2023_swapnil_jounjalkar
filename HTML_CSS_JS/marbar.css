@@ -1,0 +1,33 @@
+.imgclass{
+	
+	
+	border-bottom-right-radius: 55px;
+
+	width: 400px;
+	height: 300px;
+}
+.imgclass2{
+	border-top-right-radius: 55px;
+	border-bottom-left-radius: 55px;
+	width: 400px;
+	height: 300px;
+}
+.imgclass3{ border-top-left-radius: 250px;
+	width: 400px;
+	height: 300px;
+}
+.imgclass4{ border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 400px;
+	height: 300px;
+}
+.imgclass5{
+	border-bottom-left-radius: 15px;
+	width: 400px;
+	height: 300px;
+}
+.imgclass6{
+	border-radius: 750px;
+	width: 400px;
+	height: 400px;
+}

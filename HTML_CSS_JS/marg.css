@@ -1,0 +1,36 @@
+.mar{
+	padding: 5px;
+	
+	width: 500px;
+	height: 250px;
+	background-color: darkgray;
+
+}
+.mar1{
+	margin-top: 55px;
+	padding: 5px;
+	
+	width: 500px;
+	height: 250px;
+	background-color: darkgray;
+
+}
+.mar2{
+	margin-left: 55px;
+	padding: 5px;
+	
+	width: 500px;
+	height: 250px;
+	background-color: darkgray;
+
+}
+
+.mar3{
+	margin-right: 55px;
+	padding: 5px;
+	
+	width: 500px;
+	height: 250px;
+	background-color: darkgray;
+
+}
