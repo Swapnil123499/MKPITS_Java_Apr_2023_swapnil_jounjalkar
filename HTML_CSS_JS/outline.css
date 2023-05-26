@@ -1,0 +1,16 @@
+.abc{
+	border: 5px solid darkred;
+	outline: 5px solid black;
+	background-color: blue;
+	width: 500px;
+	height: 500px;
+}
+.def{
+
+	border-top-left-radius: 55px ;
+	outline:5px solid black;
+		
+	background-color: blue;
+	width: 500px;
+	height: 500px;
+}
