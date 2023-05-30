@@ -1,0 +1,36 @@
+img{
+	width: 50px;
+	height: 50px;
+ border-radius: 50%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+a{
+	text-decoration: none;
+	opacity: 1;
+	padding: 15px;
+	/*border-bottom: 2px solid black*/
+	font-size: 20px;
+ color: black;
+
+}
+li{
+	display:inline-block;
+	padding: 15px;
+	
+	
+}
+.navclass{
+	background-color: darkgray;
+	
+}
+.second{
+	margin-left: 700px;
+}
+ul{
+	width: 100%;
+	padding-bottom: 26px;
+	padding-top: 13px;
+	justify-content: center;
+	color: black;
+}
