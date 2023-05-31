@@ -1,7 +1,39 @@
+
+
 .sizz{
 	font size: 55px;
 	font-style: oblique;//normal,italic also
 }
 .sec{
 	 font-family: 'Roboto', sans-serif;//this is link methos at head and link used in css
+}
+.fou{
+	text-align: ;//left center right justify;
+
+	text-align-last: ;//left center right: ;
+	text-decoration:none;//if we want to removed text-decoration: ;
+	vertical-align: ;//baseline text-top text boottom subcript supersript
+	//this example are for creating image as a bullate
+
+}
+.sho{
+	text-shadow: 2px 2px 2px red;
+}
+.box{
+	height: 250px;
+	width: 250px;
+	border-color: pink;
+	box-shadow: 20px 15px 5px;
+}
+.box:hover{
+	height: 500px;
+	width: 500px;
+	box-shadow: 20px 15px 5px ;
+	margin: 20px red;
+}
+.fif{
+   font-family: 'Lato', sans-serif;;
+}
+.sis:hover{
+	text-shadow: 2px 5px blue;
 }

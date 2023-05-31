@@ -3,7 +3,7 @@ class Assignmentboolean{
 	boolean number2;
 	
 	public int Addition(){
-		int result = number1+number2;
+		boolean result = number1+number2;
 		return result;
 	}
 	public static void main(String[] args){
@@ -11,7 +11,7 @@ class Assignmentboolean{
 		Assignmentboolean assign= new Assignmentboolean();
 		assign.number1=1;
 		assign.number2=1;
-		int answer=assign.Addition();
+		boolean answer=assign.Addition();
 		System.out.println(answer);
 	}
 }

@@ -1,0 +1,22 @@
+body{
+	
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,108,101,1) 74%, rgba(0,212,255,1) 100%);
+
+}
+.text-center{
+    text-align: center;
+}
+.about-1 h1{
+    margin: 30px;
+    padding: 5px;
+}
+.hover:hover{
+    background-color: aqua;
+    box-shadow: 10px 10px black;
+    border-radius: 10px;
+}
+.hover{
+	border-radius: 10px;
+	background-color: white;
+}
