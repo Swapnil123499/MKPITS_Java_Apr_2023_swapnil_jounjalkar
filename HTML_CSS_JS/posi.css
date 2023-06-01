@@ -1,0 +1,19 @@
+.cart{
+	background-color: yellow;
+	height: 400px;
+	width: 400px;
+	margin: 4px solid red;
+}
+.front{
+	position: relative;
+	font-size: 20px;
+	top: 62px;
+	left: 22px;
+    
+}
+.background{
+	position:absolute;
+background-image: url("./images/pages.png");
+width: 200px;
+height: 200px;
+}
