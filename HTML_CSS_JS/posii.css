@@ -1,0 +1,19 @@
+.rel{
+	position: relative;
+	height: 50px;
+	width: 250px;
+	background-color: black;
+	opacity: 0.5;
+	margin-left: 200px;
+	margin-top:200px ;
+
+}
+.abs{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	top: 0px;
+	left: -21px;
+	border-radius: 50%;
+}
