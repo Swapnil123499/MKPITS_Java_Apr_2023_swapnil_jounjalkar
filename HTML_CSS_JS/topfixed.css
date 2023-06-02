@@ -1,0 +1,33 @@
+*{
+	margin-top: 0px;
+	padding: 0px;
+}
+ul{
+	position: fixed;
+	top: 0px;
+	display: inline-flex;
+   padding: 20px;
+  background-color: darkred;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+}
+
+
+li a{
+	text-decoration: none;
+	/*this removed the decoration of text in ancor or any predefined decoration in text*/
+	font-size: 28px;
+	color: black;
+}
+.ml{
+	margin-left: 400px;
+}
+li{
+	
+	list-style-type: none;/*this removed style of list*/
+	margin-left: 20px;
+}
+p{
+	margin-top: 100px;
+}
