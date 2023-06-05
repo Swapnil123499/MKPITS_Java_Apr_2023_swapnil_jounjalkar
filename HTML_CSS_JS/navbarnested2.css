@@ -1,0 +1,54 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	display: inline-block;
+	text-align: center;
+  margin-left: 40px;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.mainul{
+	padding: 20px;
+	height: 60px;
+	width: 100%;
+	background-color: blueviolet;
+}
+.dropdown{
+	position: relative;
+	
+}
+.blog{
+	
+	height: 250px;
+	width: 150px;
+	background-color: greenyellow;
+	display: none;
+	z-index: 1;
+}
+.dropdown .blog li{
+	display: block;
+	padding: 20px;
+}
+.dropdown:hover .blog{
+
+	position: absolute;
+	height: 250px;
+	width: 150px;
+	background-color: greenyellow;
+	display: block;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+.dropdown .blog li:hover{
+	display: block;
+	border-radius: 20px;
+	box-shadow:10px 10px black;
+	background-color: white;
+}
+a{
+	text-decoration: none;
+	color: gray;
+}
