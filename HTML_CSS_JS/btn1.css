@@ -1,0 +1,26 @@
+img{
+	height: 400px;
+	width: 400px;
+}
+.buttonnav .dropdown{
+
+	
+	z-index: 1;
+	display: none;
+}
+.buttonnav {
+	position: relative;
+}
+.buttonnav:hover .dropdown {
+
+	
+	height: 400px;
+	width: 400px;
+
+	z-index: 1;
+	display: block;
+	box-shadow: 10px 10px black;
+}
+.buttonnav{
+	padding: 20px 30px;
+}
