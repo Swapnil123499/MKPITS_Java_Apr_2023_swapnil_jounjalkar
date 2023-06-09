@@ -1,11 +1,11 @@
 .navbar{
 	background-color: sandybrown;
 }
-img{
-width: 100%;
-height: 500px;
-
+.carousel .carousel-inner .carousel-item .couresimg{
+	width:100%;
+	height: 500px;
 }
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -14,7 +14,7 @@ height: 500px;
 	font-size: 80px;
   color: white;
 }
-.blog{position: relative;
+.blog .first{position: relative;
 }
 .transform{
 	position: absolute;
@@ -78,8 +78,8 @@ margin-top: 40px;
     padding: 5px;
 }
 .hover:hover{
-    background-color: aqua;
-    box-shadow: 10px 10px black;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px 5px black;
     border-radius: 10px;
 }
 .hover{
