@@ -19,31 +19,39 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { authInterceptorProviders } from './services/auth.interceptor';
-import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
-import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+
 //import { NormalGuard } from './services/normal.guard';
 //import { UserService } from './services/user.service';
 //import { AdminGuard } from './services/admin.guard';
 import {MatListModule} from '@angular/material/list';
-import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
 //import { WelcomComponent } from './pages/admin/welcome/welcom.component';
-import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
-import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
-import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
-import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
-import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
+
+
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
-import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
 
-import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
-import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { UsersidebarComponent } from './pages/user/usersidebar/usersidebar.component';
-import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
-import { InstructionsComponent } from './pages/user/instructions/instructions.component';
-import { StartComponent } from './pages/user/start/start.component';
+import { FooterComponent } from './footer/footer.component';
+import { AdminpageComponent } from './pages/admin/adminpage/adminpage.component';
+import { UserdashboardComponent } from './pages/user/userdashboard/userdashboard.component';
+import { CreateproductComponent } from './pages/admin/createproduct/createproduct.component';
+import { UpdateproductComponent } from './pages/admin/updateproduct/updateproduct.component';
+import { AllproductsComponent } from './pages/admin/allproducts/allproducts.component';
+import { ActiveproductsComponent } from './pages/admin/activeproducts/activeproducts.component';
+import { WelcomeadminComponent } from './pages/admin/welcomeadmin/welcomeadmin.component';
+import { UpdateeachproductComponent } from './pages/admin/updateeachproduct/updateeachproduct.component';
+import { DeleteproductComponent } from './pages/admin/deleteproduct/deleteproduct.component';
+import { DeleteeachproductComponent } from './pages/admin/deleteeachproduct/deleteeachproduct.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CartComponent } from './pages/user/cart/cart.component';
+import { UserhomeComponent } from './pages/user/userhome/userhome.component';
+import { HomecartComponent } from './pages/user/homecart/homecart.component';
+import { LoadingcartComponent } from './pages/user/loadingcart/loadingcart.component';
+import { OrdersdetailComponent } from './pages/user/ordersdetail/ordersdetail.component';
+import { AboutusComponent } from './mainfiles/aboutus/aboutus.component';
+import { ServicesComponent } from './mainfiles/services/services.component';
+import { AboutdetailComponent } from './mainfiles/aboutdetail/aboutdetail.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -52,23 +60,25 @@ import { StartComponent } from './pages/user/start/start.component';
     SignupComponent,
     LoginComponent,
     HomeComponent,
-    DashboardComponent,
-    UserDashboardComponent,
-    ProfileComponent,
-    SidebarComponent,
-   
-    WelcomeComponent,
-        ViewCategoriesComponent,
-        AddCategoryComponent,
-        ViewQuizzesComponent,
-        AddQuizComponent,
-        UpdateQuizComponent,
-        ViewQuizQuestionsComponent,
-        AddQuestionComponent,
-        UsersidebarComponent,
-        LoadQuizComponent,
-        InstructionsComponent,
-        StartComponent
+    FooterComponent,
+    AdminpageComponent,
+    UserdashboardComponent,
+    CreateproductComponent,
+    UpdateproductComponent,
+    AllproductsComponent,
+    ActiveproductsComponent,
+    WelcomeadminComponent,
+    UpdateeachproductComponent,
+    DeleteproductComponent,
+    DeleteeachproductComponent,
+    CartComponent,
+    UserhomeComponent,
+    HomecartComponent,
+    LoadingcartComponent,
+    OrdersdetailComponent,
+    AboutusComponent,
+    ServicesComponent,
+    AboutdetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,7 +96,9 @@ import { StartComponent } from './pages/user/start/start.component';
     MatListModule,
     MatSlideToggleModule,
     MatSelectModule,
-    CKEditorModule
+    CKEditorModule,
+    Ng2SearchPipeModule,
+    MatProgressSpinnerModule
     
     
   ],

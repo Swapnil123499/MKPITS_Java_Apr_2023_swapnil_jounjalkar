@@ -1,27 +1,31 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
-import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
-import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
-
-import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
-import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
-import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
-import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
-import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
-import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
-//import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+
 import { SignupComponent } from './pages/signup/signup.component';
-import { InstructionsComponent } from './pages/user/instructions/instructions.component';
-import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
-import { StartComponent } from './pages/user/start/start.component';
-import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+
 import { AdminGuard } from './services/admin.guard';
 import { NormalGuard } from './services/normal.guard';
+import { AdminpageComponent } from './pages/admin/adminpage/adminpage.component';
+import { UserdashboardComponent } from './pages/user/userdashboard/userdashboard.component';
+import { WelcomeadminComponent } from './pages/admin/welcomeadmin/welcomeadmin.component';
+import { CreateproductComponent } from './pages/admin/createproduct/createproduct.component';
+import { UpdateproductComponent } from './pages/admin/updateproduct/updateproduct.component';
+import { AllproductsComponent } from './pages/admin/allproducts/allproducts.component';
+import { ActiveproductsComponent } from './pages/admin/activeproducts/activeproducts.component';
+import { UpdateeachproductComponent } from './pages/admin/updateeachproduct/updateeachproduct.component';
+import { DeleteproductComponent } from './pages/admin/deleteproduct/deleteproduct.component';
+import { DeleteeachproductComponent } from './pages/admin/deleteeachproduct/deleteeachproduct.component';
+import { CartComponent } from './pages/user/cart/cart.component';
+import { UserhomeComponent } from './pages/user/userhome/userhome.component';
+import { HomecartComponent } from './pages/user/homecart/homecart.component';
+import { LoadingcartComponent } from './pages/user/loadingcart/loadingcart.component';
+import { OrdersdetailComponent } from './pages/user/ordersdetail/ordersdetail.component';
+import { AboutusComponent } from './mainfiles/aboutus/aboutus.component';
+import { ServicesComponent } from './mainfiles/services/services.component';
+import { AboutdetailComponent } from './mainfiles/aboutdetail/aboutdetail.component';
 
 const routes: Routes = [
 {
@@ -41,20 +45,61 @@ const routes: Routes = [
 },
 {
   path:'navbar',
-  component:NavbarComponent,
+  component:NavbarComponent,//this had
   pathMatch:'full'
 },
 {
+path:'aboutus',
+component:AboutusComponent
+},{
+  path:'aboutdetail',
+  component:AboutdetailComponent
+},
+{
+  path:'services',
+  component:ServicesComponent
+},
+{
   path:'admin',
-  component:DashboardComponent,
+  component:AdminpageComponent,
   
   canActivate:[AdminGuard],
+
   children:[
     {
       path:'',
-      component:WelcomeComponent,
+      component:WelcomeadminComponent
     },
-    
+    {
+      path:'create',
+      component:CreateproductComponent
+    },
+    {
+      path:'update',
+      component:UpdateproductComponent
+    },
+    {
+      path:'allproduct',
+      component:AllproductsComponent
+    },
+    {
+      path:'activeproduct',
+      component:ActiveproductsComponent
+    },
+    {
+      path:'updat/:productid',
+      component:UpdateeachproductComponent
+    },
+    {
+      path:'deleteproduct',
+      component:DeleteproductComponent
+    },
+    {
+      path:'delete/:productid',
+      component:DeleteeachproductComponent
+    }
+
+  ]}/*
     {
       path:'profile',
       component:ProfileComponent,
@@ -88,12 +133,41 @@ const routes: Routes = [
       component:AddQuestionComponent
     }
   ]
-},
+}*/,
 {
   path:'user-dashboard',
-  component:UserDashboardComponent,
+  component:UserdashboardComponent,
   
-  children:[
+  children:[{
+    path:"",
+    component:UserhomeComponent
+  },
+    
+    {
+      path:'cart',
+      component:CartComponent
+    }
+    ,
+    {
+      path:'ag/:cartid/:productname/:discountedprice',
+      component:CartComponent
+    },
+    {
+      path:'bag/:cartid/:productname/:discountedprice',
+      component:HomecartComponent
+    },{
+      path:'removed',
+      component:LoadingcartComponent
+    },
+    {
+      path:'order',
+      component:OrdersdetailComponent
+    }
+    
+  ]
+  
+}
+  /*children:[
     {
       path:':catid',
       component:LoadQuizComponent
@@ -104,12 +178,12 @@ const routes: Routes = [
     },
     
   ]
-},
-{
+}*/
+/*{
   path:'start/:qid',
   component:StartComponent,
   canActivate:[NormalGuard],
-}
+}*/
 
 ];
 

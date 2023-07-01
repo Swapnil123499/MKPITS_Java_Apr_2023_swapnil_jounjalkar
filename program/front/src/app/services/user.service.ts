@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-//import baseUrl from './helper';
-import  baseUrl  from 'src/app/services/helper';
+import baseUrl from './helper';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +9,7 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
-//add user
+  //add user
 
 public addUser(user:any){
 
@@ -20,3 +19,4 @@ public addUser(user:any){
 
 }
  
+

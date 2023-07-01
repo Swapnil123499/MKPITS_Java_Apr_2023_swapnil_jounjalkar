@@ -1,18 +1,18 @@
-<app-navbar></app-navbar>
-<br>
-<div class="bootstrap-wrapper">
 
+
+<div class="mian">
+  <br>
     <div clss="container text-center">
         <div class="col-md-6 offset-md-3">
             <mat-card>
             <div class="container" id="abc">
-            <img src="../../../assets/logo.png"/><br>
+            
             </div>
                        <br><br><br><br><br><br>
-            <h1 class="text-center">register here !!</h1>
+            <h1 class="text-center">Register here !!</h1>
                             <hr>
                             <hr>
-                            {{user | json}}
+                         <!--   {{user | json}}-->
                             
                             <form (ngSubmit)="formSubmit()">
 
@@ -73,7 +73,7 @@
                                 <!--button-->
                                 <div class="container text-center">
                                     <button type="submit" mat-raised-button color="primary">Regiter</button>
-                                    <button style="margin-left: 20px" mat-raised-button color="accent">Clear</button>
+                                    <button type="reset" style="margin-left: 20px" mat-raised-button color="accent">Clear</button>
                                 </div>
                                 <hr color="blue">
 
@@ -84,5 +84,5 @@
         </div>
     </div>
 
-
+  <app-footer></app-footer>
 </div>

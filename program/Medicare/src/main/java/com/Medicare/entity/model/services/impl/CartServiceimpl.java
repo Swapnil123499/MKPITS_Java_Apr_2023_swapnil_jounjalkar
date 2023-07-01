@@ -1,6 +1,7 @@
 package com.Medicare.entity.model.services.impl;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,18 @@ private CartRepository repository;
 	public Set<Cart> getallcart() {
 		
 		return new LinkedHashSet<> (this.repository.findAll());
+	}
+
+	@Override
+	public List<Cart> getallusercart(String usernameofcart) {
+		
+		return this.repository.findByUsernameofcart(usernameofcart);
+	}
+
+	@Override
+	public void deletedallcartbyuser(String usernameofcart) {
+		   List<Cart> cartdeletebyitsusername= this.repository.findByUsernameofcart(usernameofcart);
+		  this.repository.deleteAll(cartdeletebyitsusername);
 	}
 
 }

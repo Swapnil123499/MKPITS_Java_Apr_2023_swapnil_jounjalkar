@@ -34,6 +34,7 @@ public loginUser(token:any){
   localStorage.setItem('token',token);
   
   return true;
+  
 }
 
 //isLogin: user is login or not

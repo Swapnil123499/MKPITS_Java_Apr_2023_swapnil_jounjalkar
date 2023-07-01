@@ -15,12 +15,13 @@ private String productdescription;
 private Long price;
 private Long discount;
 private Long discountedprice;
+private boolean enable=false;
 public Product() {
 	super();
-	// TODO Auto-generated constructor stub
+	
 }
 public Product(Long productid, String productname, String productdescription, Long price, Long discount,
-		Long discountedprice) {
+		Long discountedprice, boolean enable) {
 	super();
 	this.productid = productid;
 	this.productname = productname;
@@ -28,6 +29,7 @@ public Product(Long productid, String productname, String productdescription, Lo
 	this.price = price;
 	this.discount = discount;
 	this.discountedprice = discountedprice;
+	this.enable = enable;
 }
 public Long getProductid() {
 	return productid;
@@ -65,5 +67,11 @@ public Long getDiscountedprice() {
 public void setDiscountedprice(Long discountedprice) {
 	this.discountedprice = discountedprice;
 }
-	
+public boolean isEnable() {
+	return enable;
+}
+public void setEnable(boolean enable) {
+	this.enable = enable;
+}
+
 }

@@ -13,16 +13,18 @@ private Long cartid;
 private String productnameofcart;
 private String usernameofcart;
 private Long discountedpriceincart;
+private Long count=1l;
 public Cart() {
 	super();
-	// TODO Auto-generated constructor stub
+	
 }
-public Cart(Long cartid, String productnameofcart, String usernameofcart, Long discountedpriceincart) {
+public Cart(Long cartid, String productnameofcart, String usernameofcart, Long discountedpriceincart, Long count) {
 	super();
 	this.cartid = cartid;
 	this.productnameofcart = productnameofcart;
 	this.usernameofcart = usernameofcart;
 	this.discountedpriceincart = discountedpriceincart;
+	this.count = count;
 }
 public Long getCartid() {
 	return cartid;
@@ -47,6 +49,12 @@ public Long getDiscountedpriceincart() {
 }
 public void setDiscountedpriceincart(Long discountedpriceincart) {
 	this.discountedpriceincart = discountedpriceincart;
+}
+public Long getCount() {
+	return count;
+}
+public void setCount(Long count) {
+	this.count = count;
 }
 
 }

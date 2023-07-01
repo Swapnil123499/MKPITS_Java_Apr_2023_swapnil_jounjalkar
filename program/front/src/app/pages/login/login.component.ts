@@ -63,10 +63,10 @@ loginData={
                     this.login.loginStatusSubject.next(true);
                   }
                else if(this.login.getUserRole()=='Normal')
-                {
+                {  console.log("enter")
                     //normal user dasboard
                    // window.location.href='/user-dashboard';
-                      this.router.navigate(['user-dashboard/0'])
+                      this.router.navigate(['user-dashboard'])
                       this.login.loginStatusSubject.next(true);
                   }
                else{

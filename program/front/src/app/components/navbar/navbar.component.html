@@ -1,31 +1,36 @@
-<mat-toolbar color="primary">
-    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon><span class="material-symbols-outlined">
-        menu_book
-        </span></mat-icon>
-      </a>
-    <span>Examportal</span>
-    <span class="example-spacer"></span>
 
-
-    <a
-    *ngIf="!isLoggedIn"
-    routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>login</mat-icon>
-    </a>
-    <a 
-    *ngIf="!isLoggedIn"
-
-    routerLink="/signup" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon><span class="material-symbols-outlined">
-        how_to_reg
-        </span></mat-icon>
-      </a>
-
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
       
-
-
-      <a 
+    <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-heart-pulse fa-flip"></i> Medicare</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus/">About-us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="/services/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" >Service I</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" >Service II</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" >Service III</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" >Disabled</a>
+        </li>
+        <li class="btcolor"> 
+          <a 
       (click)="logout()"
       *ngIf="isLoggedIn"
   
@@ -34,25 +39,24 @@
           Logout
           
         </a>
-
-        
-        <button 
-        
-        *ngIf="isLoggedIn && user"
-           
-            routerLink="/admin/profile"
-
-         mat-icon-button 
-         style="margin-right: 50px;"
-         class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
-          
-            <!--{{ user.username }}-->
-
-               {{ login.getUser().username}}
-            
-        </button>
-  
+        </li>
+      </ul>
+      <!--<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+      <button routerLink="cart" class="btcolor" *ngIf="isLoggedIn" routerLink="/user-dashboard/cart">
+        <i  style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger"><!--setvalue here for cart--></div>
+    </button>
+    </div>
+  </div>
+</nav>
 
 
-  </mat-toolbar>
-  
+
+
+
+
+
+

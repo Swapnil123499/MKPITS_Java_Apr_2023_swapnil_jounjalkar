@@ -1,6 +1,7 @@
 package com.Medicare.entity.model.services.impl;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,12 @@ private ProductRepository repository;
 	public void deleteproductbyid(Long productid) {
 		this.repository.deleteById(productid);
 		
+	}
+
+	@Override
+	public List<Product> getactiveproduct() {
+		
+		return this.repository.findByEnable(true);
 	}
 
 }

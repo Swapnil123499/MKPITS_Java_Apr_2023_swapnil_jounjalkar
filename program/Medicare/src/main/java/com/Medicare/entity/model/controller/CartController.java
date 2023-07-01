@@ -1,8 +1,10 @@
 package com.Medicare.entity.model.controller;
 
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +19,7 @@ import com.Medicare.entity.model.services.CartService;
 
 @RestController
 @RequestMapping("/cart")
+@CrossOrigin("*")
 public class CartController {
 @Autowired
 private CartService service;
@@ -24,7 +27,7 @@ private CartService service;
 public Cart makecart(@RequestBody Cart cart) {
 	return this.service.creatcart(cart);
 }
-@PutMapping("/")
+@PutMapping("/{cartid}")
 public Cart updatecartcontroller(@PathVariable("cartid") Long cartid,@RequestBody Cart cart)
 {     cart.setCartid(cartid);
 	return this.service.updatecart(cart);
@@ -44,4 +47,14 @@ public void deletecartincontroller(@PathVariable("cartid") Long cartid)
 {
 	this.service.deletecart(cartid);
 }
+@GetMapping("/cat/{usernameofcart}")
+public List<Cart> getAllCartController(@PathVariable("usernameofcart") String usernameofcart){
+	  System.out.println(usernameofcart);
+	return this.service.getallusercart(usernameofcart);
+}
+@DeleteMapping("/deletee/{usernameofcart}")
+public void deleteAllByUser(@PathVariable("usernameofcart") String usernameofcart) {
+	this.service.deletedallcartbyuser(usernameofcart);
+}
+
 }
