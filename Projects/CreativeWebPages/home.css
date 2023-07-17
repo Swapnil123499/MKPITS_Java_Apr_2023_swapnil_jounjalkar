@@ -1,0 +1,140 @@
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .content li {
+    margin-right: 30px;
+  }
+  
+  .content a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .content {
+      display: none;
+    }
+    
+    #menu-toggle:checked ~ .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .code img{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    filter: blur(3px);
+  }
+  .code2{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  .code2 button{
+    padding: 8px 30px;
+    border-radius: 100px;
+    background-color: rgb(28, 3, 28);
+    color: white;
+  }
+  .code2 button:hover{
+    padding: 8px 30px;
+    border-radius: 100px;
+    background-color: rgb(92, 16, 92);
+    color: white;
+  }
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .text-center{
+     margin-top: 20px;
+     color: white;
+  }
+  .gifimg img{
+    border-top-right-radius: 100px;
+    width: 100%;
+  }
+  .navcls ul{
+    text-decoration: none;
+    
+  }
+  #maincarsole{
+    width: 100%;
+    height: 300px;
+  }
+  .maincart .imgcard{
+    height: 150px;
+  }
+  .maincart .card{
+    height: 400px;
+    width: 300px;
+  }
+  .maincart{
+    margin-top: 20px;
+  }
+  #texth1{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+  }
+  .text2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+  }
+  .textp{
+    margin-left: 8px;
+  }
+.marq{
+  margin-top: 20px;
+}
+.courses{
+  padding: 10px 30px;
+  border-radius: 100px;
+  background-color: rgb(30, 10, 10);
+  color: wheat;
+  margin-top: 10px;
+ margin-left: 400px;
+}
+.courses a{
+  text-decoration: none;
+  color: white;
+  
+}
+.navcls .logo{
+  margin-left: 20px;
+  padding: 5px;
+}
